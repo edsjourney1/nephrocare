@@ -1,6 +1,8 @@
 footer {
   background-color: var(--light-color);
   font-size: var(--body-font-size-xs);
+  max-width: 1288px;
+  margin:0 auto;
 }
 
 footer .footer > div {
@@ -18,3 +20,97 @@ footer .footer p {
     padding: 40px 32px 24px;
   }
 }
+footer {
+  background-color: #3278ad;
+}
+
+footer .footer > div {
+  margin: auto;
+  max-width: 1600px;
+}
+footer .footer .columns-wrapper {
+  padding: 0 3rem;
+}
+footer .footer .columns > div {
+  align-items: start;
+}
+footer .footer .columns > div > div {
+  margin-right: 6rem;
+}
+footer .footer .columns h3 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+  margin: 0;
+  padding-bottom: 24px;
+}
+footer .footer .columns h4 {
+  color: #9ca4b5;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 8px;
+  margin: 0;
+}
+footer .footer .columns p {
+  margin: 0;
+  padding-bottom: 24px;
+  line-height: 24px;
+}
+footer .footer .columns p a {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  white-space: normal;
+  border-radius: 0;
+  text-align: left;
+  border: 0;
+}
+footer .footer .columns p a:hover {
+  text-decoration: underline;
+}
+footer .footer .columns h5 {
+  margin: 0;
+  padding-bottom: 24px;
+}
+footer .footer .columns h5 a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #66c8eb;
+  text-decoration: none;
+}
+footer .footer .columns h5 a:hover {
+  text-decoration: underline;
+}
+footer .footer .default-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  background-color: #00246b;
+}
+footer .footer .default-content-wrapper > p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  padding: 16px 0;
+  margin: 0;
+}
+footer .footer .default-content-wrapper > p a {
+  font-size: 18px;
+  line-height: 29px;
+  color: #fff;
+  text-decoration: none;
+  margin-right:3rem;
+}
+footer .footer .default-content-wrapper > p a:hover {
+  text-decoration: underline;
+}
+@media (width >= 900px) {
+  footer .footer > div {
+    padding: 40px 32px 0;
+  }
+}
+ 

@@ -248,6 +248,7 @@ main > .section {
   margin: 40px 0;
  
 }
+main > .section.cards-container:last-child {margin-bottom:0}
 
 main > .section > div {
   max-width: 1200px;

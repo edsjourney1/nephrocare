@@ -135,6 +135,10 @@ main > .section.related-section.cards-container > div .cards > ul > li:hover > .
 .cards > ul > li:first-of-type{
   display: flex;
 }
+.right-img-cards .cards > ul > li:first-of-type{
+  display: flex;
+  flex-direction: row-reverse;
+}
 .cards .cards-card-image{
   max-width: 57%;
   position: relative;
@@ -171,7 +175,7 @@ main > .section.related-section.cards-container > div .cards > ul > li:hover > .
   text-decoration: none;
   background-color: transparent;
 }
-.full-teaser .cards > ul > li:first-of-type .cards-card-body h2{
+.full-teaser .cards > ul > li:first-of-type .cards-card-body h2{ 
   font-size: 27px;;
 }
 .full-teaser .cards > ul > li:first-of-type .cards-card-body h3{

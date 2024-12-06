@@ -17,15 +17,29 @@ import {
  * Builds hero block and prepends to main in a new section.
  * @param {Element} main The container element
  */
-function buildHeroBlock(main) {
-  const h1 = main.querySelector('h1');
+function buildHeroBlock(main) { 
+  const h1 = main.querySelector('h1'); 
+   var elements = main.querySelectorAll('div');
+
   const picture = main.querySelector('picture');
-  // eslint-disable-next-line no-bitwise
+
+
   if (h1 && picture && (h1.compareDocumentPosition(picture) & Node.DOCUMENT_POSITION_PRECEDING)) {
-    const section = document.createElement('div');
-    section.append(buildBlock('hero', { elems: [picture, h1] }));
-    main.prepend(section);
-  }
+      const section = document.createElement('div');
+      const heroContent = document.createElement('div'); // Create a new div with class 'heroContent'
+      heroContent.classList.add('heroContent'); // Add the class 'heroContent' to the div
+
+      // Append the h1 element to the heroContent div
+      heroContent.append(h1);
+      heroContent.appendChild(elements[0]);
+
+
+      // Append the heroContent div and picture element to the section
+      section.append(buildBlock('hero', { elems: [picture, heroContent] }));
+
+      // Prepend the section to the main content area
+      main.prepend(section);
+  } 
 }
 
 /**

@@ -138,13 +138,75 @@ main > .section.related-section.cards-container > div .cards > ul > li:hover > .
 .cards .cards-card-image{
   max-width: 57%;
   position: relative;
-
-    top: -20px;
-    left: -20px;
+ 
+    top: -20px;  
+    left: -20px; 
 } 
+.full-teaser .cards > ul{
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+}
+.full-teaser .cards .cards-card-image {
+  width: 100%;}
+.full-teaser .cards > ul > li img{
+  
+  aspect-ratio: 16 / 9;
+  height: 100%;
+ 
+}
+.full-teaser  .cards .cards-card-body{
+  padding: 20px;
+}
+.full-teaser .cards > ul > li:first-of-type .cards-card-body p:first-of-type,
+.full-teaser .cards > ul > li:first-of-type, .full-teaser .cards > ul > li:first-of-type a,
+.full-teaser .cards > ul > li:first-of-type .cards-card-body .button-container .button{
+  color:#071b45;
+  text-decoration: none;
+  background-color: transparent;
+}
+.full-teaser .cards.teaser-2  > ul > li:first-of-type .cards-card-body p:first-of-type,
+.full-teaser .cards.teaser-2  > ul > li:first-of-type,
+.full-teaser .cards.teaser-2  > ul > li:first-of-type a,
+.full-teaser .cards.teaser-2  > ul > li:first-of-type .cards-card-body .button-container .button{
+  color:#fff;
+  text-decoration: none;
+  background-color: transparent;
+}
+.full-teaser .cards > ul > li:first-of-type .cards-card-body h2{
+  font-size: 27px;;
+}
+.full-teaser .cards > ul > li:first-of-type .cards-card-body h3{
+  font-size: 36px;
+}
+.full-teaser  p.button-container:nth-of-type(2){
+  display: inline-block;
+}
+.full-teaser  p.button-container:nth-of-type(2) a.button{
+  border: 1px solid black;
+  border-radius: 0;
+  padding:7px 20px;
+  font-weight: bold;
+}
+.full-teaser .cards.teaser-2 p.button-container:nth-of-type(2) a.button{
+  border: 1px solid #fff;
+}
+.full-teaser  p.button-container:nth-of-type(3){
+  position: absolute;
+  right:20px;
+  bottom: 0;
+}
+.full-teaser .cards > ul > li:first-of-type .cards-card-body{
+  position: relative;
+}
+.full-teaser .cards.teaser-1  ul > li:first-of-type{
+  background-color: #eeedeb;
+}
+.full-teaser .cards.teaser-2  ul > li:first-of-type{
+  background-color: #ed484f;
+}
+.full-teaser .cards > ul p a{margin:0;padding:0}
 .cards.accent-1  ul > li:first-of-type{background-color: var(--card-accent1-color);}
 .cards.accent-2  ul > li:first-of-type{background-color: var(--card-accent2-color);}
 .cards.accent-3  ul > li:first-of-type{background-color: var(--card-accent3-color);}
 .cards.accent-4  ul > li:first-of-type{background-color: var(--card-accent4-color);}
 .cards.accent-5  ul > li:first-of-type{background-color: var(--card-accent5-color);}
-.cards.accent-6  ul > li:first-of-type{background-color: var(--card-accent6-color);}
+.cards.accent-6  ul > li:first-of-type{background-color: var(--card-accent6-color);}  

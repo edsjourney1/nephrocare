@@ -49,20 +49,20 @@
   --card-accent4-color: #60a03b;
   --card-accent5-color: #009dd6;
   --card-accent6-color: #e67428;
-}
-
+} 
+ 
 /* fallback fonts */
 @font-face {
   font-family: roboto-condensed-fallback;
   size-adjust: 88.82%;
   src: local('Arial');
-}
+}      
 
 @font-face {
   font-family: roboto-fallback;
   size-adjust: 99.529%;
   src: local('Arial');
-}
+} 
 
 @media (width >= 900px) {
   :root {

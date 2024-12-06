@@ -1,0 +1,23 @@
+
+@import url(styles.css);
+.left-news-section{float:left;width:66%}
+.right-news-section{float:right;width:33%}
+.news-section{width:1680px;clear:both;overflow: auto;}
+main{max-width: 1680px;margin:0 auto;}
+.section.text-section{
+    display: flex;
+    justify-content: flex-start;
+}
+.text-section .default-content-wrapper{
+    width: 66%;
+    margin: 0;
+}
+main > section.text-section{
+    margin-bottom:40px
+}
+.section.text-section h2, .section.text-section p{
+    margin-bottom: 32px;
+}
+.cards > ul > li{
+    display: flex;
+} 

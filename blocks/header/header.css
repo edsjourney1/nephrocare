@@ -1,9 +1,13 @@
 /* header and nav layout */
 header .nav-wrapper {
   background-color: var(--background-color);
-  width: 100%;
+  max-width: 1288px;
   z-index: 2;
   position: fixed;
+  left: 0;
+  right: 0;
+  margin:0 auto;
+  border-bottom: 1px solid #cecece;
 }
 
 header nav {
@@ -15,7 +19,7 @@ header nav {
   align-items: center;
   gap: 0 24px;
   margin: auto;
-  max-width: 1248px;
+  max-width: 1288px;
   height: var(--nav-height);
   padding: 0 24px;
   font-family: var(--body-font-family);
@@ -35,8 +39,8 @@ header nav[aria-expanded='true'] {
     display: flex;
     justify-content: space-between;
     gap: 0 32px;
-    max-width: 1264px;
-    padding: 0 32px;
+    max-width: 1288px;
+    padding: 0 40px;
   }
 
   header nav[aria-expanded='true'] {
@@ -145,7 +149,7 @@ header .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 220px;
   height: auto;
 }
 

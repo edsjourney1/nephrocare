@@ -10,18 +10,21 @@
  * governing permissions and limitations under the License.
  */
 
-:root {
+ :root {
   /* colors */
+  --body-background-color:#dcdad8;
   --background-color: white;
   --light-color: #f8f8f8;
   --dark-color: #505050;
   --text-color: #131313;
-  --link-color: #3b63fb;
+  
+  --link-color:#0033a0;
   --link-hover-color: #1d3ecf;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --heading-font-family: "Helvetica Neue LT W05_75 Bold", Helvetica, Arial, sans-serif, sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -37,7 +40,15 @@
   --heading-font-size-xs: 22px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 116px;
+
+  /*card accent color*/
+  --card-accent1-color: #3278ad;
+  --card-accent2-color: #25a2bb;
+  --card-accent3-color: #071b45;
+  --card-accent4-color: #60a03b;
+  --card-accent5-color: #009dd6;
+  --card-accent6-color: #e67428;
 }
 
 /* fallback fonts */
@@ -61,9 +72,9 @@
     --body-font-size-xs: 14px;
 
     /* heading sizes */
-    --heading-font-size-xxl: 45px;
+    --heading-font-size-xxl: 48px;
     --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
+    --heading-font-size-l: 24px;
     --heading-font-size-m: 22px;
     --heading-font-size-s: 20px;
     --heading-font-size-xs: 18px;
@@ -73,7 +84,7 @@
 body {
   display: none;
   margin: 0;
-  background-color: var(--background-color);
+  background-color: var(--body-background-color);
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
@@ -223,13 +234,19 @@ main img {
 }
 
 .icon img {
-  height: 100%;
+  height: 100%; 
   width: 100%;
 }
 
+main{
+  background-color: var(--background-color);
+  max-width: 1288px;
+  margin:0 auto;
+}
 /* sections */
 main > .section {
   margin: 40px 0;
+ 
 }
 
 main > .section > div {
@@ -244,7 +261,7 @@ main > .section:first-of-type {
 
 @media (width >= 900px) {
   main > .section > div {
-    padding: 0 32px;
+    padding: 0 40px;
   }
 }
 
@@ -255,3 +272,25 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+main > .section.cards-container{
+  margin:40px 20px;
+  padding:40px 0;
+}
+
+ 
+
+
+  @media (min-width: 1024px) {
+    main > .section > div {
+          max-width: 1024px;
+      }
+  }
+
+  @media (min-width: 1680px) {
+    main > .section > div {
+          max-width: 1680px;
+      }
+  }
+
+
+
